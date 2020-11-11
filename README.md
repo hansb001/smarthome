@@ -3,9 +3,9 @@ Sometimes it can be complicated to read certain sensors to see what is going on.
 
 When you have completed this code-pattern, you will understand how to:
 
-•	Connect sensors and actuators to an Arduino and read their values
-•	Set up a gateway on a Raspberry Pi
-•	Run a MQTT Server on a Raspberry Pi
-•	Connect sensors on a NodeMCU device and read their values
-•	Build an application in Node-RED
-•	Use Bluetooth, Wifi and MQTT (and optional LoRAWan) to communicate between the devices
+*	Connect sensors and actuators to an Arduino and read their values
+*	Set up a gateway on a Raspberry Pi
+*	Run a MQTT Server on a Raspberry Pi
+*	Connect sensors on a NodeMCU device and read their values
+*	Build an application in Node-RED
+*	Use Bluetooth, Wifi and MQTT (and optional LoRAWan) to communicate between the devices
