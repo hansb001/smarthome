@@ -10,7 +10,7 @@ When you have completed this code-pattern, you will understand how to:
 *	Build an application in Node-RED
 *	Use Bluetooth, Wifi and MQTT (and optional LoRAWan) to communicate between the devices
 
-Flow
+## Flow
  
 1.	The home consists of a lot of sensors and actuators connected to an Arduino clone
 2.	The smart garden, which is a NodeMCU-device with some sensors to control the garden
@@ -20,3 +20,12 @@ Flow
 6.	This dashboard can be reached by mobile devices via WiFi and gives more information then in step4
 7.	A camera is connected to the gateway to automatically take pictures when someone approaches the smart home
 
+## Included Components
+* Node-RED
+* MQTT
+* Bluetooth
+* Arduino
+* Raspberry Pi
+* Sensors
+* Actuators
+* Slack
