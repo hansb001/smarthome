@@ -77,3 +77,15 @@ I used for this code pattern the following components:
 
 For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern I advise you to have all parts available. You can also follow this code pattern with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop. 
 
+# Step 2 Clone the repo
+
+First let's get the code. From the terminal of the system you plan on running Node-RED from, do the following:
+
+Clone the node-red-tensorflowjs repo:
+
+$ git clone https://github.com/IBM/xxxxxxxxx
+Move into the directory of the cloned repo:
+
+$ cd xxxxxx
+Note: For Raspberry Pi users, details on accessing the command line can be found in the remote access documentation if not connecting with a screen and keyboard.
+
