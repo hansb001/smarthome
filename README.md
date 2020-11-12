@@ -21,11 +21,59 @@ When you have completed this code-pattern, you will understand how to:
 7.	A camera is connected to the gateway to automatically take pictures when someone approaches the smart home
 
 ## Included Components
-* Node-RED
-* MQTT
+
+* Node-RED, Open source flow based editor to create applications
+* MQTT, open source protocol for sending messages
 * Bluetooth
-* Arduino
-* Raspberry Pi
-* Sensors
-* Actuators
-* Slack
+* Arduino, open source micro processor
+* Raspberry Pi, credit card sized mini computer
+* Sensors: Gas sensor, humidity sensor, light sensor, movement sensor,
+* Actuators: LED's, fan, servo's, buttons, relay, LED display
+* Optional: Slack
+* Optional: Node-MCU, microprocessor
+
+# Featured technologies
+
+* Node.js
+* C++ for Arduino and Node-MCU
+
+# Prerequisites
+
+* Node.js installation (with NPM)
+* Arduino IDE + libraries
+* Familiarity with basic Arduino concepts
+* Familiarity with basic Node-RED concepts
+* Familiarity with basic Linux concepts
+
+# Steps
+
+Follow these steps to setup and run this code pattern. The steps are described in detail below.
+
+1. Do some shopping (optional)
+2. Clone the repo
+3. Build your smart home and set up application
+4. Set up MQTT Broker
+5. Set up Gateway
+6. Optional Set-up Node-MCU
+
+# Step 1 Do some shopping (Optional)
+
+I used for this code pattern the following components:
+
+
+
+* *Keyestudio smart home set*: https://www.amazon.com/KEYESTUDIO-Starter-Electronics-Automation-Education/dp/B08CZ778DJ/ref=sr_1_3?dchild=1&keywords=Keyestudio+Smart+Home+Kit&qid=1605176281&sr=8-3 , this includes a laser cut wooden house, with an Arduino clone with a sensor shield, bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc.
+
+It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and ofcourse also for the complete set-up.
+
+*Raspberry PI 1*: This house is connected to a gateway, I used a Raspbery Pi 4 for that, but can also be a 3. This Raspberry acts as a gatway between the devices and the MQTT server. This gateway is also connected to the cloud or local machine. OPTIONAL: you can also run this on another device, like your local machine.
+
+*Raspberry Pi 2*:  This raspberry acts as a MQTT Broker I used a Raspbery Pi (3 or 4) for that with a sense-hat board. This sensehat is optional, I use it for displaying traffic going through the MQTT server. OPTIONAL: you can also use a public broker for this, or run a broker on another device.
+
+OPTIONAL: *NodeMCU*: there are different devices base on ESP8266, It is open source and relatively cheap and easy to work with.
+
+I am using a LoLin board, which has wifi on board, I have connected some sensors to it to control my 'smart garden'
+
+
+For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern I advise you to have all parts available. You can also follow this code pattern with only having an Arduino with one sensor. All the parts running on the 2 raspberry pi's can also run on your laptop. 
+
