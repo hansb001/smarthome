@@ -72,10 +72,8 @@ I used for this code pattern the following components:
 
 * Web camera, this can be any USB camera or a Raspberry Pi camera.
 
-* OPTIONAL: *NodeMCU*: there are different devices base on ESP8266, It is open source and relatively cheap and easy to work with.
-
-I am using a LoLin board, which has wifi on board, I have connected some sensors to it to control my 'smart garden'
+* OPTIONAL: *NodeMCU*: there are different devices based on ESP8266, It is open source and relatively cheap and easy to work with. I am using a LoLin board, which has wifi on board, I have connected some sensors to it to control my 'smart garden'
 
 
-For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern I advise you to have all parts available. You can also follow this code pattern with only having an Arduino with one sensor. All the parts running on the 2 raspberry pi's can also run on your laptop. 
+For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern I advise you to have all parts available. You can also follow this code pattern with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop. 
 
