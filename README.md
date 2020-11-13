@@ -89,3 +89,19 @@ Move into the directory of the cloned repo:
 $ cd xxxxxx
 Note: For Raspberry Pi users, details on accessing the command line can be found in the remote access documentation if not connecting with a screen and keyboard.
 
+# Step 3 Build your smart home and set up application
+
+here you can find all instructions to build the smart home: https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino
+
+You first get an introduction of all the part of the complete set. Then you start with downloading the Arduino software, needed to program the micro controller. The instructions are based for a Windows, but instructions for Mac are similar.
+DRIVER FOR MAC NEEDED?? CHECK
+Then to check if you can connect with the Arduino, you use a example skech to test connectivity.
+Next step is to install needed libraries for two of the components: LED display and the servo's. after doing this, you are good to go!
+The tuturial then continues with a description of all the components and some sample code to test. there is also a good explanation of the every peace of code available.
+The last step before assembling the wooden house and the components, is to connect your IOS or Android device to the Bluetooth Module. You have to dowhnlaod an app, with this app you can control and start/stop some of the components. Later on in this code pttern you will build an alternative for this.
+
+If the house is asseblemd you need to connect all the wires from the components to the expansion board, a table is available to conenct the cpmponents to the right ports. When this is done, it is time to upload the code to control all the components, which is avialable in the last step of the tutorial.
+
+When this is uploaded, you can test all the different compenents one by one to see if they are connected in the right way.
+
+FYI, I did not connect the servo form the window in the right way: it opens when the water sensor gets activated....
