@@ -81,7 +81,7 @@ For this code pattern I used different pieces of hardware. To use all the possib
 
 First let's get the code. From the terminal of the system you plan on running Node-RED from, do the following:
 
-Clone the node-red-tensorflowjs repo:
+Clone the XXXXXX repo:
 
 $ git clone https://github.com/IBM/xxxxxxxxx
 Move into the directory of the cloned repo:
