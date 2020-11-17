@@ -56,7 +56,8 @@ Follow these steps to setup and run this code pattern. The steps are described i
 3. Build your smart home and set up application
 4. Set up MQTT Broker
 5. Set up Gateway
-6. Optional Set-up Node-MCU
+6. Send data via Gateway
+7. Optional Set-up Node-MCU
 
 # Step 1 Do some shopping (Optional)
 
@@ -110,3 +111,4 @@ If the house is assembled, you need to connect all the wires from the components
 When the sketch is uploaded, you can test all the different compenents one by one to see if they are connected in the right way.
 
 FYI, I did not connect the servo from the window in the right way: it opens when the water sensor gets activated....
+
