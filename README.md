@@ -144,4 +144,27 @@ Nov 12 13:17:07 rpiMqttServer systemd[1]: Starting LSB: mosquitto MQTT v3.1 mess
 Nov 12 13:17:10 rpiMqttServer mosquitto[331]: Starting network daemon:: mosquitto.
 Nov 12 13:17:10 rpiMqttServer systemd[1]: Started LSB: mosquitto MQTT v3.1 message broker.
 ```
+Now it is time to test the broker. Therefor you need to subscribe to an MQTT topic.
 
+A topic is simply a string that looks like a file system path. It has the general form:-
+
+a/b/c/...
+
+The great thing about MQTT is that you can just make up topics which describe your needs. You don’t need to register them anywhere. In this test we use ```test/message```
+In the existing terminal, subscribe to the test/message topic:
+
+```mosquitto_sub -h localhost -t "test/message"```
+
+This will send a  message to the MQTT broker which is currently running on the same system (-h localhost option). But it could be running somewhere else.
+
+
+Because your current terminal is listening to the topic, you willneed to open another terminal. 
+
+Once open, publish message to the test/message topic like this:-
+
+``` mosquitto_pub -h localhost -t "test/message" -m "Hello, world" ```
+If you look back at the first terminal now you should see this:-
+
+```Hello, world```
+
+if this works, your MQTT Broker is working!
