@@ -112,3 +112,36 @@ When the sketch is uploaded, you can test all the different compenents one by on
 
 FYI, I did not connect the servo from the window in the right way: it opens when the water sensor gets activated....
 
+# Step 4 Set up MQTT Broker
+
+MQTT is a lightweight and simple messaging protocol. therefore you need a braker which recieves and sends messages based on a certain topic. If you want to read more about MQTT, please go here: https://mqtt.org
+In this step I used a Raspberry Pi for an MQTT Broker. You can also host it locally on your laptop or use a test-broker as found on the web.
+I used Mosquito as this is the most used on Raspberry, but basically you can use any broker.
+
+to install, use the following command: ```sudo apt install mosquitto mosquitto-clients```
+
+Start the broker and  automatically start after reboot using the following command:-
+```
+sudo systemctl enable mosquitto
+```
+The broker should now be running. You can check this via the systemd service status:-
+```
+sudo systemctl status mosquitto
+```
+The output should be similar as the following:
+```
+pi@rpiMqttServer:~ $ sudo systemctl status mosquitto
+● mosquitto.service - LSB: mosquitto MQTT v3.1 message broker
+   Loaded: loaded (/etc/init.d/mosquitto; generated; vendor preset: enabled)
+   Active: active (running) since Thu 2020-11-12 13:17:10 CET; 4 days ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 331 ExecStart=/etc/init.d/mosquitto start (code=exited, status=0/SUCCESS)
+    Tasks: 1 (limit: 4915)
+   CGroup: /system.slice/mosquitto.service
+           └─444 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
+
+Nov 12 13:17:07 rpiMqttServer systemd[1]: Starting LSB: mosquitto MQTT v3.1 message broker...
+Nov 12 13:17:10 rpiMqttServer mosquitto[331]: Starting network daemon:: mosquitto.
+Nov 12 13:17:10 rpiMqttServer systemd[1]: Started LSB: mosquitto MQTT v3.1 message broker.
+```
+
