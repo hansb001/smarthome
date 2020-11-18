@@ -34,12 +34,12 @@ When you have completed this code-pattern, you will understand how to:
 * Slack
 * Optional: Node-MCU, microprocessor
 
-# Featured technologies
+## Featured technologies
 
 * Node.js
 * C++ for Arduino and Node-MCU
 
-# Prerequisites
+## Prerequisites
 
 * Node.js installation (with NPM)
 * Arduino IDE + libraries
@@ -47,7 +47,7 @@ When you have completed this code-pattern, you will understand how to:
 * Familiarity with basic Node-RED concepts
 * Familiarity with basic Linux concepts
 
-# Steps
+## Steps
 
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
 
@@ -59,7 +59,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 6. Send data via Gateway
 7. Optional Set-up Node-MCU
 
-# Step 1 Do some shopping (Optional)
+## Step 1 Do some shopping (Optional)
 
 I used for this code pattern the following components:
 
@@ -78,7 +78,7 @@ I used for this code pattern the following components:
 
 For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern I advise you to have all parts available. You can also follow this code pattern with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop. 
 
-# Step 2 Clone the repo
+## Step 2 Clone the repo
 
 First let's get the code. From the terminal of the system you plan on running Node-RED from, do the following:
 
@@ -90,7 +90,7 @@ Move into the directory of the cloned repo:
 $ cd xxxxxx
 Note: For Raspberry Pi users, details on accessing the command line can be found in the remote access documentation if not connecting with a screen and keyboard.
 
-# Step 3 Build your smart home and set up application
+## Step 3 Build your smart home and set up application
 
 here you can find all instructions to build the smart home: https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino
 
@@ -112,7 +112,7 @@ When the sketch is uploaded, you can test all the different compenents one by on
 
 FYI, I did not connect the servo from the window in the right way: it opens when the water sensor gets activated....
 
-# Step 4 Set up MQTT Broker
+## Step 4 Set up MQTT Broker
 
 MQTT is a lightweight and simple messaging protocol. therefore you need a braker which recieves and sends messages based on a certain topic. If you want to read more about MQTT, please go here: https://mqtt.org
 In this step I used a Raspberry Pi for an MQTT Broker. You can also host it locally on your laptop or use a test-broker as found on the web.
@@ -176,13 +176,13 @@ I added a sensehat (https://www.raspberrypi.org/products/sense-hat/?resellerType
 An application in Node-RED is made for that, you can find the FLow here: xxxxxx
 << explain flow here >>
 
-# Step 5 Set up Gateway
+## Step 5 Set up Gateway
 
-# 6 Send data via Gateway
+## Step 6 Send data via Gateway
 
-# 7 Optional Set-up Node-MCU
+## Step 7 Optional Set-up Node-MCU
 
-# Links
+## Links
 
 ## License
 
