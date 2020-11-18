@@ -168,3 +168,9 @@ If you look back at the first terminal now you should see this:-
 ```Hello, world```
 
 if this works, your MQTT Broker is working!
+
+Optional:
+
+I added a sensehat (https://www.raspberrypi.org/products/sense-hat/?resellerType=home)to the raspberry Pi to make it visual when messages are being send. Every time a messasege goes through the broker, an image is being diplayed on the sensehat.
+
+An application in Node-RED is made for that, you can find the FLow here: xxxxxx
