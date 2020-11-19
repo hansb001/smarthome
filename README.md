@@ -57,7 +57,8 @@ Follow these steps to setup and run this code pattern. The steps are described i
 4. Set up MQTT Broker
 5. Set up Gateway
 6. Send data via Gateway
-7. Optional Set-up Node-MCU
+7. Build a dashboard
+8. Optional Set-up Node-MCU
 
 ## Step 1 Do some shopping (Optional)
 
@@ -174,14 +175,22 @@ Optional:
 I added a Sensehat (https://www.raspberrypi.org/products/sense-hat/?resellerType=home)to the raspberry Pi to make it visual when messages are being send. Every time a message goes through the broker, an image is being displayed on the Sensehat.
 
 An application in Node-RED is made for that:
-![MQTT Flow](images/SM_MQTT_Flow.png)
+![MQTT Flow](images/SH_MQTT_Flow.png)
 
 
 << explain flow here >>
 
 ## Step 5 Set up Gateway
 
+![MQTT Flow](images/SH_Gateway_Flow.png)
+
 ## Step 6 Send data via Gateway
+
+## Step 7 Build a Dashboard
+
+![Local or Cloud Flow](images/SH_Local_Flow.png)
+![Dashboard](images/SH_Dashboard.png)
+
 
 ## Step 7 Optional Set-up Node-MCU
 
