@@ -55,10 +55,9 @@ Follow these steps to setup and run this code pattern. The steps are described i
 2. Clone the repo
 3. Build your smart home and set up application
 4. Set up MQTT Broker
-5. Set up Gateway
-6. Send data via Gateway
-7. Build a dashboard
-8. Optional Set-up Node-MCU
+5. Set up Gatewayy
+6. Build a dashboard
+7. Optional Set-up Node-MCU
 
 ## Step 1 Do some shopping (Optional)
 
@@ -182,14 +181,22 @@ An application in Node-RED is made for that:
 
 ## Step 5 Set up Gateway
 
+In this step you wil create a simple flow. This flow is needed to send and recieve data (via MQTT) from the connected devices to a dashboard, wich runs locally or in the cloud.
+
 ![MQTT Flow](images/SH_Gateway_Flow.png)
 
-## Step 6 Send data via Gateway
+
 
 ## Step 7 Build a Dashboard
 
-![Local or Cloud Flow](images/SH_Local_Flow.png)
+This dashboard receives data from the connected devices, especially from some sensors. You can also start these sensors and take images to see what is going on around the house.
+
 ![Dashboard](images/SH_Dashboard.png)
+
+To get the data on the dashboard you need to creat a flow:
+
+![Local or Cloud Flow](images/SH_Local_Flow.png)
+
 
 
 ## Step 7 Optional Set-up Node-MCU
