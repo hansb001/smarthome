@@ -193,11 +193,10 @@ This dashboard receives data from the connected devices, especially from some se
 
 ![Dashboard](images/SH_Dashboard.png)
 
-To get the data on the dashboard you need to creat a flow:
+To get the data on the dashboard you need to create a flow:
 
 
-
-![Local or Cloud Flow]<img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
+<img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
 
 
 
