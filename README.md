@@ -195,7 +195,9 @@ This dashboard receives data from the connected devices, especially from some se
 
 To get the data on the dashboard you need to creat a flow:
 
-![Local or Cloud Flow](images/SH_Local_Flow.png:height="50%" width="50%")
+![Local or Cloud Flow](images/SH_Local_Flow.png)
+
+<img src="images/SH_Local_Flow.png" width="100" height="100"/>
 
 
 
