@@ -197,7 +197,7 @@ To get the data on the dashboard you need to creat a flow:
 
 ![Local or Cloud Flow](images/SH_Local_Flow.png)
 
-<img src="images/SH_Local_Flow.png" width="100" height="100"/>
+<img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
 
 
 
