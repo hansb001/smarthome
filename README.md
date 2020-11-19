@@ -174,8 +174,9 @@ Optional:
 I added a Sensehat (https://www.raspberrypi.org/products/sense-hat/?resellerType=home)to the raspberry Pi to make it visual when messages are being send. Every time a message goes through the broker, an image is being displayed on the Sensehat.
 
 An application in Node-RED is made for that:
+![MQTT Flow](images/SM_MQTT_Flow.png)
 
-/images/SM_MQTT_Flow.png
+
 << explain flow here >>
 
 ## Step 5 Set up Gateway
