@@ -187,7 +187,7 @@ In this step you wil create a simple flow. This flow is needed to send and recie
 
 
 
-## Step 7 Build a Dashboard
+## Step 6 Build a Dashboard
 
 This dashboard receives data from the connected devices, especially from some sensors. You can also start these sensors and take images to see what is going on around the house.
 
@@ -195,7 +195,7 @@ This dashboard receives data from the connected devices, especially from some se
 
 To get the data on the dashboard you need to creat a flow:
 
-![Local or Cloud Flow](images/SH_Local_Flow.png)
+![Local or Cloud Flow](images/SH_Local_Flow.png){:height="50%" width="50%"}
 
 
 
