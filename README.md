@@ -1,3 +1,6 @@
+# ! ! ! U N D E R  C O N S T R U C T I O N ! ! !
+## This document is work in progress!
+
 # Open-source tools to connect and control your ‘Smart home’ via MQTT and Bluetooth
 Sometimes it can be complicated to read certain sensors to see what is going on. In this code-pattern that is made simple, with only open-source technologies. This might not be an enterprise ready solution, but it shows how easy it is to use any device. So also, more professional devices can be used in similar ways.
 
