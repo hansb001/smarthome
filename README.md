@@ -205,6 +205,9 @@ To get the data on the dashboard you need to create a flow:
 
 ## Step 7 Optional Set-up Node-MCU
 
+The code is available here
+I attached a soil moisture sensor to the NodeMCU it sends its data via MQTT to the gateway to the dashboard
+
 ## Links
 
 ## License
