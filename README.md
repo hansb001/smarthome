@@ -21,9 +21,11 @@ When you have completed this code-pattern, you will understand how to:
 2.	The smart garden, which is a NodeMCU-device with some sensors to control the garden (optional)
 3.	Both devices are connected to a gateway, which sends and receives data, This is based on a raspberry pi
 4.	The smart home is also connected to a mobile device via Bluetooth
-5.	Via MQTT a Nod-RED dashboard is connected to the gateway
-6.	This dashboard can be reached by mobile devices via WIFI and gives more information than in step4
-7.	A camera is connected to the gateway to automatically take pictures when someone approaches the smart home and send to Slack
+5.	Via a MQTT server the different components communicate with each other
+6  Dashboard which gives an overview of the status of the home and garden is connected to the gateway via MQTT. This runs on a local machine or on IBM cloud
+7.	This dashboard can be reached by mobile devices via WIFI 
+8.	A camera is connected to the gateway to automatically take pictures when someone approaches 
+9. Some of the notification are being sent to Slack
 
 ## Included Components
 
