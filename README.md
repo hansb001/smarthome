@@ -16,6 +16,7 @@ When you have completed this code-pattern, you will understand how to:
 * Send messages to Slack
 
 ## Flow
+![ArchitectureDiagram](images/SH_Architecture_Diagram.png)
  
 1.	The home consists of a lot of sensors and actuators connected to an Arduino clone
 2.	The smart garden, which is a NodeMCU-device with some sensors to control the garden (optional)
