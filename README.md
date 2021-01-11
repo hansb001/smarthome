@@ -30,10 +30,10 @@ When you have completed this code-pattern, you will understand how to:
 
 ## Included Components
 
-* Node-RED, open-source flow based editor to create applications
-* MQTT, open-source protocol for sending messages
+* [Node-RED](https://nodered.org), open-source flow based editor to create applications
+* [MQTT](https://mqtt.org), open-source protocol for sending messages
 * Bluetooth
-* Arduino, open-source micro processor
+* [Arduino](www.arduino.cc, open-source micro processor
 * Raspberry Pi, credit card sized minicomputer
 * Sensors: Gas sensor, humidity sensor, light sensor, movement sensor,
 * Actuators: LED's, fan, servo's, buttons, relay, LED display
