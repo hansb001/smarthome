@@ -99,28 +99,40 @@ Note: For Raspberry Pi users, details on accessing the command line can be found
 
 ## Step 3 Build your smart home and set up application
 
-Here you can find all instructions to build the smart home: https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino
+[Here](https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino) you can find all instructions to build the smart home. This tutrial is provided by Keyestudio.
 
 You first get an introduction of all the parts of the complete set. Then you start with downloading the Arduino software, needed to program the micro controller. The instructions are based for Windows, but instructions for Apple are similar.
 
 DRIVER FOR MAC NEEDED?? CHECK
 
 Then to check if you can connect with the Arduino, you use a example sketch to test connectivity.
-Next step is to install needed libraries for two of the components: LED display and the servos. After doing this, you are good to go!
+Next step is to install needed libraries for two of the components: 
+ * LED display 
+ * Servos. 
+After doing this, you are good to go!
 The tutorial then continues with a description of all the components and some sample code to test. There is also a good explanation of every piece of code available.
-The last step before assembling the wooden house and the components, is to connect your IOS or Android device to the Bluetooth Module. You have to download an app, with this app you can control and start/stop some of the components. Later on in this code pattern you will build an alternative for this.
-If the house is assembled, you need to connect all the wires from the components to the expansion board, in the tutorial you will see a table to connect the components to the right ports. When this is done, it is time to upload the code to control all the components, which is available in the last step of the tutorial.
+The last step before assembling the wooden house and the components, is to connect your IOS or Android device to the Bluetooth Module. 
+You have to download an app, with this app you can control and start/stop some of the components. Later on in this code pattern you will build an alternative for this.
+If the house is assembled, you need to connect all the wires from the components to the expansion board, in the tutorial you will see a table to connect the components to the right ports. 
+When this is done, it is time to upload the code to control all the components, which is available in the last step of the tutorial.
 When the sketch is uploaded, you can test all the different components one by one to see if they are connected in the right way.
 FYI, I did not connect the servo from the window in the right way: it opens when the water sensor gets activated....
 
+You can use this smarthome like you configured it, but to connect it to the gateway and make data vissible to the dashboard you need to change the code.
+These changes where being made:
 
-## Step 4 Set up MQTT Broker
+***xxxx add code snippets  and explain xxxxxx***
+
+## Step 4 Set up Node-RED
+
+
+## Step 5 Set up MQTT Broker
 
 MQTT is a lightweight and simple messaging protocol, therefore, you need a broker which receives and sends messages based on a certain topic. If you want to read more about MQTT, please go here: https://mqtt.org
 In this step I used a Raspberry Pi for an MQTT Broker. You can also host it locally on your laptop or use a test-broker as found on the web.
 I used Mosquito as this is the most used on Raspberry, but basically you can use any broker.
 
-to install, use the following command: ```sudo apt install mosquitto mosquitto-clients```
+To install, use the following command: ```sudo apt install mosquitto mosquitto-clients```
 
 Start the broker and automatically start after reboot using the following command:-
 ```
@@ -173,23 +185,25 @@ if this works, your MQTT Broker is working!
 
 Optional:
 
-I added a Sensehat (https://www.raspberrypi.org/products/sense-hat/?resellerType=home)to the raspberry Pi to make it visual when messages are being send. Every time a message goes through the broker, an image is being displayed on the Sensehat.
+I added a [Sense HAT](https://www.raspberrypi.org/products/sense-hat/?resellerType=home) to the Raspberry Pi to make visual when messages are being send. A Sense HAT is an additional board on top of a Raspberry Pi. It consists of sensors, joystick and a LED matrix. Every time a message goes through the broker, an image is being displayed on the LED Matrix of the Sense HAT. 
 
-An application in Node-RED is made for that:
+For displaying, I created an application in Node-RED  for that:
 ![MQTT Flow](images/SH_MQTT_Flow.png)
 
 
 << explain flow here >>
 
-## Step 5 Set up Gateway
+The flow can be found [here](/flows/MQTT flow)
+
+## Step 6 Set up Gateway
 
 In this step you wil create a simple flow. This flow is needed to send and recieve data (via MQTT) from the connected devices to a dashboard, wich runs locally or in the cloud.
 
 ![MQTT Flow](images/SH_Gateway_Flow.png)
 
+The flow can be found [here](/flows/gateway)
 
-
-## Step 6 Build a Dashboard
+## Step 7 Build a Dashboard
 
 This dashboard receives data from the connected devices, especially from some sensors. You can also start these sensors and take images to see what is going on around the house.
 
@@ -200,9 +214,9 @@ To get the data on the dashboard you need to create a flow:
 
 <img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
 
+The flow can be found [here](/flows/local flow)
 
-
-## Step 7 Optional Set-up Node-MCU
+## Step 8 Optional Set-up Node-MCU
 
 The code is available here
 I attached a soil moisture sensor to the NodeMCU it sends its data via MQTT to the gateway to the dashboard
