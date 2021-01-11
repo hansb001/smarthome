@@ -60,6 +60,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 1. Do some shopping (optional)
 2. Clone the repo
 3. Build your smart home and set up application
+3a. Change code to view data on dashboard
 4. Setup Node-RED on both Raspberry Pi's and local machine
 5. Set up MQTT Broker
 6. Set up Gateway
@@ -126,8 +127,9 @@ When the sketch is uploaded, you can test all the different components one by on
 
 FYI, I did not connect the servo from the window in the right way: it opens when the water sensor gets activated....
 
+## Step 3a Change code to view data on dashboard 
 
-You can use this smarthome like you configured it, but to connect it to the gateway and make data vissible to the dashboard you need to change the code.
+You can use this smarthome like you configured it as above, but to connect it to the gateway and make data vissible to the dashboard you need to change the code.
 These changes where being made:
 
 
