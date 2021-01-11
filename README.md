@@ -18,15 +18,14 @@ When you have completed this code-pattern, you will understand how to:
 ## Flow
 ![ArchitectureDiagram](images/SH_Architecture_Diagram.png)
  
-1.	The home consists of a lot of sensors and actuators connected to an Arduino clone
-2.	The smart garden, which is a NodeMCU-device with some sensors to control the garden (optional)
-3.	Both devices are connected to a gateway, which sends and receives data, This is based on a raspberry pi
-4.	The smart home is also connected to a mobile device via Bluetooth
-5.	Via a MQTT server the different components communicate with each other
-6  Dashboard which gives an overview of the status of the home and garden is connected to the gateway via MQTT. This runs on a local machine or on IBM cloud
-7.	This dashboard can be reached by mobile devices via WIFI 
-8.	A camera is connected to the gateway to automatically take pictures when someone approaches 
-9. Some of the notification are being sent to Slack
+1.	The smart home consists of 13 sensors and actuators connected to an Arduino-like device. This device has a extra board where all the components are connected to.
+2.	The smart garden, which is a NodeMCU-device a sensor to control the garden (optional).
+3.	Both devices are connected to a gateway, which sends and receives data. This gateway runs on a Raspberry Pi.
+4.	The smart home has a bluetooth module and can be connected to a mobile device.
+5.	Via a MQTT server the different components communicate with each other.
+6  A Dashboard gives an overview of the status of the smart home and smart garden. The dashboard is connected to the gateway via MQTT. This dashboard runs on a local machine or on IBM cloud. This dashboard can be reached by mobile devices via WIFI.
+7.	A camera is connected to the gateway to automatically take pictures when someone approaches the smart home.
+8. Some of the notifications are being sent to Slack
 
 ## Included Components
 
