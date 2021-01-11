@@ -72,17 +72,17 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 I used for this code pattern the following components:
 
-* [*Keyestudio smart home set:*](https://www.keyestudio.com/products/keyestudio-smart-home-kit-withlus-board-for-arduino-diy-stem) this set includes a laser cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up. This set is sold via different vendors, so look for the best fit for you.
+* [*Keyestudio smart home set:*](https://www.keyestudio.com/products/keyestudio-smart-home-kit-withlus-board-for-arduino-diy-stem) this set includes a laser cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up. This set is sold via different vendors, so look for the best price for you.
 
-*	*Raspberry PI 1*: This house is connected to a gateway, I used a Raspberry Pi 4 for that, but can also be a 3. This Raspberry acts as a gateway between the devices and the MQTT server. This gateway is also connected to the cloud or local machine. OPTIONAL: you can also run this on another device, like your local machine.
+*	*Raspberry PI 1*: This house is connected to a gateway, I used a Raspberry Pi 4 for that, but this can also be a Raspberry Pi 3. This Raspberry acts as a gateway between the devices and the MQTT server. This gateway is also connected to the cloud or local machine. OPTIONAL: you can alsohost the gatway on another device, like your local machine.
 
-* Raspberry Pi 2*: This raspberry acts as a MQTT Broker I used a Raspberry Pi (3 or 4) for that with a sense-hat board. This Sensehat is optional, I use it for displaying traffic going through the MQTT server. OPTIONAL: you can also use a public broker for this or run a broker on another device.
+* *Raspberry Pi 2*: This Raspberry Pi acts as a MQTT Broker. I use a Raspberry Pi 4 (can also be a Raspberry Pi 3) for that with a Sense HAT board. A Sense Hat is an additional board on top of an Raspberry Pi. It consists of a LED matrix and a joystick. This Sensehat is optional, I use it for displaying traffic going through the MQTT server on the LED Matrix. OPTIONAL: Instead of setting up a MQTT Broker yourself, you can also use a public broker for this or run a broker on another device.
 
 * *Web camera*, this can be any USB camera or a Raspberry Pi camera.
 
-* OPTIONAL: *NodeMCU*: there are different devices based on ESP8266, It is open source and relatively cheap and easy to work with. I am using a LoLin board, which has WIFI on board, I have connected some sensors to it to control my 'smart garden'
+* OPTIONAL: *NodeMCU*: there are different devices based on ESP8266, It is open source and relatively cheap and easy to work with. I am using a LoLin board, which has WIFI on board, I have connected a sensor to it to control my 'smart garden'
 
-For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern, I advise you to have all parts available. You can also follow this code pattern with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop.
+For this code pattern I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern, I advise you to have all parts available. You can also build the functionalities in this code pattern with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop or on IBM Cloud.
 
 
 ## Step 2 Clone the repo
