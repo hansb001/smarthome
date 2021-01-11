@@ -29,16 +29,16 @@ When you have completed this code-pattern, you will understand how to:
 
 ## Included Components
 
-* [Node-RED](https://nodered.org), open-source flow based editor to create applications
-* [MQTT](https://mqtt.org), open-source protocol for sending messages
-* Bluetooth
-* [Arduino](www.arduino.cc), open-source micro processor
-* [Raspberry Pi](http://raspberrypi.org), credit card sized minicomputer
+* [Node-RED](https://nodered.org), open-source programming tool, where you easily can combine hardware devices, API's etc to build applications.
+* [MQTT](https://mqtt.org), open-source protocol for sending messages.
+* Bluetooth.
+* [Arduino](www.arduino.cc), open-source micro processor.
+* [Raspberry Pi](http://raspberrypi.org), credit card sized minicomputer.
 * Sensors: Gas sensor, humidity sensor, light sensor, movement sensor,
-* Actuators: LED's, fan, servo's, buttons, relay, LED display
-* Web camera
-* [Slack](http://Slack.com)
-* Optional: Node-MCU, microprocessor
+* Actuators: LED's, fan, servo's, buttons, relay, LED display.
+* Web camera, USB or Raspberry Pi camera.
+* [Slack](http://Slack.com).
+* Optional: Node-MCU, microprocessor.
 
 ## Featured technologies
 
@@ -60,10 +60,11 @@ Follow these steps to setup and run this code pattern. The steps are described i
 1. Do some shopping (optional)
 2. Clone the repo
 3. Build your smart home and set up application
-4. Set up MQTT Broker
-5. Set up Gatewayy
-6. Build a dashboard
-7. Optional Set-up Node-MCU
+4. Setup Node-RED on both Raspberry Pi's and local machine
+5. Set up MQTT Broker
+6. Set up Gateway
+7. Build a dashboard
+8. Optional Set-up Node-MCU
 
 ## Step 1 Do some shopping (Optional)
 
@@ -71,7 +72,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 I used for this code pattern the following components:
 
-* [*Keyestudio smart home set*:](https://www.keyestudio.com/products/keyestudio-smart-home-kit-withlus-board-for-arduino-diy-stem), this includes a laser cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up. This set is sold via different vendors, so look for the best fit for you.
+* [*Keyestudio smart home set:*](https://www.keyestudio.com/products/keyestudio-smart-home-kit-withlus-board-for-arduino-diy-stem) this set includes a laser cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up. This set is sold via different vendors, so look for the best fit for you.
 
 *	*Raspberry PI 1*: This house is connected to a gateway, I used a Raspberry Pi 4 for that, but can also be a 3. This Raspberry acts as a gateway between the devices and the MQTT server. This gateway is also connected to the cloud or local machine. OPTIONAL: you can also run this on another device, like your local machine.
 
