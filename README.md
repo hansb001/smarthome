@@ -33,12 +33,12 @@ When you have completed this code-pattern, you will understand how to:
 * [Node-RED](https://nodered.org), open-source flow based editor to create applications
 * [MQTT](https://mqtt.org), open-source protocol for sending messages
 * Bluetooth
-* [Arduino](www.arduino.cc, open-source micro processor
-* Raspberry Pi, credit card sized minicomputer
+* [Arduino](www.arduino.cc), open-source micro processor
+* [Raspberry Pi](http://raspberrypi.org), credit card sized minicomputer
 * Sensors: Gas sensor, humidity sensor, light sensor, movement sensor,
 * Actuators: LED's, fan, servo's, buttons, relay, LED display
 * Web camera
-* Slack
+* [Slack](http://Slack.com)
 * Optional: Node-MCU, microprocessor
 
 ## Featured technologies
@@ -48,8 +48,8 @@ When you have completed this code-pattern, you will understand how to:
 
 ## Prerequisites
 
-* Node.js installation (with NPM)
-* Arduino IDE + libraries
+* [Node.js installation (with NPM)](https://nodejs.org/en/download/)
+* [Arduino IDE](https://www.arduino.cc/en/software) (or use the web-editor) + libraries ****Mention Libraries****
 * Familiarity with basic Arduino concepts
 * Familiarity with basic Node-RED concepts
 * Familiarity with basic Linux concepts
@@ -72,7 +72,7 @@ Follow these steps to setup and run this code pattern. The steps are described i
 
 I used for this code pattern the following components:
 
-* *Keyestudio smart home set*: https://www.amazon.com/KEYESTUDIO-Starter-Electronics-Automation-Education/dp/B08CZ778DJ/ref=sr_1_3?dchild=1&keywords=Keyestudio+Smart+Home+Kit&qid=1605176281&sr=8-3 , this includes a laser cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up.
+* [*Keyestudio smart home set*:] (https://www.amazon.com/KEYESTUDIO-Starter-Electronics-Automation-Education/dp/B08CZ778DJ/ref=sr_1_3?dchild=1&keywords=Keyestudio+Smart+Home+Kit&qid=1605176281&sr=8-3) , this includes a laser cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything together. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up.
 
 *	*Raspberry PI 1*: This house is connected to a gateway, I used a Raspberry Pi 4 for that, but can also be a 3. This Raspberry acts as a gateway between the devices and the MQTT server. This gateway is also connected to the cloud or local machine. OPTIONAL: you can also run this on another device, like your local machine.
 
