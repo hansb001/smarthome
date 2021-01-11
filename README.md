@@ -99,7 +99,7 @@ Note: For Raspberry Pi users, details on accessing the command line can be found
 
 ## Step 3 Build your smart home and set up application
 
-[Here](https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino) you can find all instructions to build the smart home. This tutrial is provided by Keyestudio.
+[Here](https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino) you can find all instructions to build the smart home. This tutorial is provided by Keyestudio.
 
 You first get an introduction of all the parts of the complete set. Then you start with downloading the Arduino software, needed to program the micro controller. The instructions are based for Windows, but instructions for Apple are similar.
 
@@ -109,17 +109,27 @@ Then to check if you can connect with the Arduino, you use a example sketch to t
 Next step is to install needed libraries for two of the components: 
  * LED display 
  * Servos. 
+ 
 After doing this, you are good to go!
+
 The tutorial then continues with a description of all the components and some sample code to test. There is also a good explanation of every piece of code available.
+
 The last step before assembling the wooden house and the components, is to connect your IOS or Android device to the Bluetooth Module. 
+
 You have to download an app, with this app you can control and start/stop some of the components. Later on in this code pattern you will build an alternative for this.
+
 If the house is assembled, you need to connect all the wires from the components to the expansion board, in the tutorial you will see a table to connect the components to the right ports. 
+
 When this is done, it is time to upload the code to control all the components, which is available in the last step of the tutorial.
+
 When the sketch is uploaded, you can test all the different components one by one to see if they are connected in the right way.
+
 FYI, I did not connect the servo from the window in the right way: it opens when the water sensor gets activated....
+
 
 You can use this smarthome like you configured it, but to connect it to the gateway and make data vissible to the dashboard you need to change the code.
 These changes where being made:
+
 
 ***xxxx add code snippets  and explain xxxxxx***
 
