@@ -203,7 +203,7 @@ For displaying, I created an application in Node-RED  for that:
 
 << explain flow here >>
 
-The flow can be found [here](/flows/MQTT flow)
+The flow can be found [here](/flows/MQTT_flow)
 
 ## Step 6 Set up Gateway
 
@@ -211,7 +211,7 @@ In this step you wil create a simple flow. This flow is needed to send and recie
 
 ![MQTT Flow](images/SH_Gateway_Flow.png)
 
-The flow can be found [here](/flows/gateway)
+The flow can be found [here](/flows/Gateway_flow)
 
 ## Step 7 Build a Dashboard
 
@@ -224,7 +224,7 @@ To get the data on the dashboard you need to create a flow:
 
 <img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
 
-The flow can be found [here](/flows/local flow)
+The flow can be found [here](/flows/Local_flow)
 
 ## Step 8 Optional Set-up Node-MCU
 
