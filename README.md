@@ -100,7 +100,7 @@ Note: For Raspberry Pi users, details on accessing the command line can be found
 
 ## Step 3 Build your smart home and set up application
 
-[Here](https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino) you can find all instructions to build the smart home. This tutorial is provided by Keyestudio.
+[Here](https://wiki.keyestudio.com/KS0085_Keyestudio_Smart_Home_Kit_for_Arduino) you can find all instructions and [here](https://fs.keyestudio.com/KS0085) is the sample code to build the smart home. This tutorial and sample code is provided by Keyestudio.
 
 You first get an introduction of all the parts of the complete set. Then you start with downloading the Arduino software, needed to program the micro controller. The instructions are based for Windows, but instructions for Apple are similar.
 
