@@ -6,10 +6,7 @@
 
 
 
-# 
-```diff 
-- ! ! ! U N D E R  C O N S T R U C T I O N ! ! ! 
-```
+
 
 ## This document is being worked on !
 
@@ -155,9 +152,38 @@ These changes where being made:
 ```
 
 I am using Node-RED on diferent devices to collect the data from the smart home and garden to show it on the dashboard. Therfore I installed Node-RED on both Raspberry Pi's and on my local machine. If you are using an earlier version of Raspian (Rasberry Pi operating system) Node-RED might be installed allready. I will now explain what you need to do before you can start with importing or building the flows in the next steps.
-first I will start with the Raspberry Pi's and later with the local machine and IBM cloud.
 
-### install Node-RED on Raspberry PI
+In short you need to do the following steps for both the Raspberry Pi and local machine:
+1. Install Node.js and nvm
+2. Install Node-RED
+3. Add security to Node-RED
+4. Install extra nodes
+
+As installation for both devices are a bit different, I will first explain how to install on Raspberry Pi.
+
+# Install Node-RED on Raspberry PI
+
+The following information comes from the Node-RED documentation and can also be found [here](https://nodered.org/docs/getting-started/raspberrypi)
+
+Running the following command will download and run a script. This script is to install Node.js, npm and Node-RED onto a Raspberry Pi. (The script can also be used to upgrade an existing install when a new release is available).
+```
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+```
+
+# Install Node-RED on Local Machine (Mac)
+
+first you need to install node.js and and npm. Download the latest package [here](https://nodejs.org/en/) this includes Node.js and npm. 
+Then open the package and install.
+then you can install Node-RED with the following command ( found in the Node-RED [documentation](https://nodered.org/docs/getting-started/local#installing-with-npm):
+
+```sudo npm install -g --unsafe-perm node-red```
+
+For other operating systems, have a look in the Node-RED [documentation](https://nodered.org/docs/getting-started/local#installing-with-npm)
+
+
+
+
+
 
 ## Step 5 Set up MQTT Broker
 
