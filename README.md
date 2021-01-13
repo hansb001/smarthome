@@ -11,14 +11,7 @@
 - ! ! ! U N D E R  C O N S T R U C T I O N ! ! ! 
 ```
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-## This document is work in progress!
+## This document is being worked on !
 
 # Open-source tools to connect and control your ‘Smart home’ via MQTT and Bluetooth
 Sometimes it can be complicated to read certain sensors to see what is going on. In this code-pattern that is made simple, with only open-source technologies. This might not be an enterprise ready solution, but it shows how easy it is to use any device. So also, more professional devices can be used in similar ways.
@@ -62,6 +55,7 @@ When you have completed this code-pattern, you will understand how to:
 
 * Node.js
 * C++ for Arduino and Node-MCU
+* Node-RED
 
 ## Prerequisites
 
@@ -122,8 +116,9 @@ Note: For Raspberry Pi users, details on accessing the command line can be found
 
 You first get an introduction of all the parts of the complete set. Then you start with downloading the Arduino software, needed to program the micro controller. The instructions are based for Windows, but instructions for Apple are similar.
 
-DRIVER FOR MAC NEEDED?? CHECK
-
+```diff
+- DRIVER FOR MAC NEEDED?? CHECK
+```
 Then to check if you can connect with the Arduino, you use a example sketch to test connectivity.
 Next step is to install needed libraries for two of the components: 
  * LED display 
@@ -150,11 +145,14 @@ FYI, I did not connect the servo from the window in the right way: it opens when
 You can use this smarthome like you configured it as above, but to connect it to the gateway and make data vissible to the dashboard you need to change the code.
 These changes where being made:
 
-
-***xxxx add code snippets  and explain xxxxxx***
-
+```diff
+- xxxx add code snippets  and explain xxxxxx***
+```
 ## Step 4 Set up Node-RED
 
+```diff
+- add
+```
 
 ## Step 5 Set up MQTT Broker
 
