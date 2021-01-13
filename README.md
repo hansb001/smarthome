@@ -1,7 +1,14 @@
 # 
 
-'''diff - ! ! ! U N D E R  C O N S T R U C T I O N ! ! ! -'''
+``diff - ! ! ! U N D E R  C O N S T R U C T I O N ! ! ! -```
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 ## This document is work in progress!
 
 # Open-source tools to connect and control your ‘Smart home’ via MQTT and Bluetooth
