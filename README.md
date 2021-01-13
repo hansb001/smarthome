@@ -218,8 +218,7 @@ I added a [Sense HAT](https://www.raspberrypi.org/products/sense-hat/?resellerTy
 For displaying, I created an application in Node-RED  for that:
 ![MQTT Flow](images/SH_MQTT_Flow.png)
 
-```
-diff
+```diff
 - << explain flow here >>
 ```
 The flow can be found [here](/flows/MQTT_flow)
@@ -230,8 +229,7 @@ In this step you wil create a simple flow. This flow is needed to send and recie
 
 ![MQTT Flow](images/SH_Gateway_Flow.png)
 
-```
-diff
+```diff
 - << explain flow here >>
 ```
 
