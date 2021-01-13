@@ -101,9 +101,9 @@ For this code pattern I used different pieces of hardware. To use all the possib
 ## Step 2 Clone the repo
 
 First let's get the code. From the terminal of the system, you plan on running Node-RED from, do the following:
-
-Clone the XXXXXX repo:
-
+```diff
+- Clone the XXXXXX repo:
+```
 $ git clone https://github.com/IBM/xxxxxxxxx
 Move into the directory of the cloned repo:
 
@@ -218,9 +218,10 @@ I added a [Sense HAT](https://www.raspberrypi.org/products/sense-hat/?resellerTy
 For displaying, I created an application in Node-RED  for that:
 ![MQTT Flow](images/SH_MQTT_Flow.png)
 
-
-<< explain flow here >>
-
+```
+diff
+- << explain flow here >>
+```
 The flow can be found [here](/flows/MQTT_flow)
 
 ## Step 6 Set up Gateway
@@ -228,6 +229,11 @@ The flow can be found [here](/flows/MQTT_flow)
 In this step you wil create a simple flow. This flow is needed to send and recieve data (via MQTT) from the connected devices to a dashboard, wich runs locally or in the cloud.
 
 ![MQTT Flow](images/SH_Gateway_Flow.png)
+
+```
+diff
+- << explain flow here >>
+```
 
 The flow can be found [here](/flows/Gateway_flow)
 
@@ -240,13 +246,24 @@ This dashboard receives data from the connected devices, especially from some se
 To get the data on the dashboard you need to create a flow:
 
 
-<img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
+<img src="images/SH_Local_Flow.png" width="50%" height="50%"/>```
+
+
+```diff
+- << explain flow here >>
+```
 
 The flow can be found [here](/flows/Local_flow)
 
 ## Step 8 Optional Set-up Node-MCU
 
-The code is available here
+The code is available 
+
+
+```diff
+- here + explain
+```
+
 I attached a soil moisture sensor to the NodeMCU it sends its data via MQTT to the gateway to the dashboard
 
 ## Links
