@@ -154,6 +154,11 @@ These changes where being made:
 - add
 ```
 
+I am using Node-RED on diferent devices to collect the data from the smart home and garden to show it on the dashboard. Therfore I installed Node-RED on both Raspberry Pi's and on my local machine. If you are using an earlier version of Raspian (Rasberry Pi operating system) Node-RED might be installed allready. I will now explain what you need to do before you can start with importing or building the flows in the next steps.
+first I will start with the Raspberry Pi's and later with the local machine and IBM cloud.
+
+### install Node-RED on Raspberry PI
+
 ## Step 5 Set up MQTT Broker
 
 MQTT is a lightweight and simple messaging protocol, therefore, you need a broker which receives and sends messages based on a certain topic. If you want to read more about MQTT, please go here: https://mqtt.org
