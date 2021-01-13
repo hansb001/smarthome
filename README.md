@@ -161,7 +161,7 @@ In short you need to do the following steps for both the Raspberry Pi and local 
 
 As installation for both devices are a bit different, I will first explain how to install on Raspberry Pi.
 
-# Install Node-RED on Raspberry PI
+#### Install Node-RED on Raspberry PI
 
 The following information comes from the Node-RED documentation and can also be found [here](https://nodered.org/docs/getting-started/raspberrypi)
 
@@ -170,7 +170,7 @@ Running the following command will download and run a script. This script is to 
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 ```
 
-# Install Node-RED on Local Machine (Mac)
+#### Install Node-RED on Local Machine (Mac)
 
 first you need to install node.js and and npm. Download the latest package [here](https://nodejs.org/en/) this includes Node.js and npm. 
 Then open the package and install.
