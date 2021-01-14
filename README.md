@@ -144,7 +144,8 @@ The changed code can be found [here](/code/ArduinoCodeSmartHome.ino)
 
 I mainly added lines like the following. This is done because in this way the information is being send to the gateway.
 
-```189 case 'j'://if val is character 'j'，program will circulate
+```
+189 case 'j'://if val is character 'j'，program will circulate
    199  Serial.println((String)"Soil= "+soil);
 ```
 ## Step 4 Set up Node-RED
