@@ -139,11 +139,13 @@ FYI, I did not connect the servo from the window in the right way: it opens when
 
 ## Step 3a Change code to view data on dashboard 
 
-You can use this smarthome like you configured it as above, but to connect it to the gateway and make data vissible to the dashboard you need to change the code.
-These changes where being made:
+You can use this smarthome like you configured it as above, but to connect it to the gateway and make data vissible to the dashboard you need to add a few lines the code.
+The changed code can be found [here](/code/ArduinoCodeSmartHome.ino)
 
-```diff
-- xxxx add code snippets  and explain xxxxxx***
+I mainly added lines like the following. This is done because in this way the information is being send to the gateway.
+
+```189 case 'j'://if val is character 'j'，program will circulate
+   199  Serial.println((String)"Soil= "+soil);
 ```
 ## Step 4 Set up Node-RED
 
