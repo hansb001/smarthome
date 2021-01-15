@@ -162,11 +162,10 @@ Gas sensor (line 185)  it sends the the value of gas to the console and the USB 
 188      break;//exit loop
 ```
 
-In this way I added lines for the other sensors as well
+In this way I added lines for the other sensors as well.
 
 The changed code can be found [here](/code/ArduinoCodeSmartHome.ino)
 
-I mainly added lines like the following. This is done because in this way the information is being send to the gateway.
 
 ## Step 4 Set up Node-RED
 
@@ -195,16 +194,45 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 
 #### Install Node-RED on Local Machine (Mac)
 
-first you need to install node.js and and npm. Download the latest package [here](https://nodejs.org/en/) this includes Node.js and npm. 
-Then open the package and install.
-then you can install Node-RED with the following command ( found in the Node-RED [documentation](https://nodered.org/docs/getting-started/local#installing-with-npm):
+First you need to install node.js and and npm. Download the latest package [here](https://nodejs.org/en/) this includes Node.js and npm. 
+
+Then you can install Node-RED with the following command (found in the Node-RED [documentation](https://nodered.org/docs/getting-started/local#installing-with-npm)):
 
 ```sudo npm install -g --unsafe-perm node-red```
 
 For other operating systems, have a look in the Node-RED [documentation](https://nodered.org/docs/getting-started/local#installing-with-npm)
 
 
+#### Install additional Node-RED nodes on Raspberry Pi and Local Machine 
 
+You can install additional nodes to have additional functionalities available. 
+
+You can do that as follows
+
+1. Click on the 'hamburger menu' (in the top right of the screen, on the right of the deploy button)
+2. Manage palette
+3. install tab
+4. depending on what device you are working, search for one of the following:
+
+On the Raspberry Pi for the gateway you need to install:
+
+```node-red-contrib-image-output
+node-red-contrib-slack-files
+node-red-node-serialport
+node-red-node-base64
+node-red-contrib-usbcamera
+```
+
+On the Raspberry Pi for the MQTT server you need to install:
+
+```node-red-node-pi-sense-hat
+```
+
+On the local machine you need to install:
+```node-red-dashboard
+```
+
+When installation is complete, you will see the nodes apear in the list of nodes on the left.
 
 
 
