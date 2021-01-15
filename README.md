@@ -101,10 +101,14 @@ First let's get the code. From the terminal of the system, you plan on running N
 ```diff
 - Clone the XXXXXX repo:
 ```
+```
 $ git clone https://github.com/IBM/xxxxxxxxx
-Move into the directory of the cloned repo:
+```
 
+Move into the directory of the cloned repo:
+```
 $ cd xxxxxx
+```
 Note: For Raspberry Pi users, details on accessing the command line can be found in the remote access documentation if not connecting with a screen and keyboard.
 
 ## Step 3 Build your smart home and set up application
@@ -113,9 +117,6 @@ Note: For Raspberry Pi users, details on accessing the command line can be found
 
 You first get an introduction of all the parts of the complete set. Then you start with downloading the Arduino software, needed to program the micro controller. The instructions are based for Windows, but instructions for Apple are similar.
 
-```diff
-- DRIVER FOR MAC NEEDED?? CHECK
-```
 Then to check if you can connect with the Arduino, you use a example sketch to test connectivity.
 Next step is to install needed libraries for two of the components: 
  * LED display 
