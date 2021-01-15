@@ -305,9 +305,10 @@ For displaying, I created an application in Node-RED  for that:
 ![MQTT Flow](images/SH_MQTT_Flow.png)
 
 The flow works as follows:
-1. Messages come in via one of the 2 MQTT-nodes ```smart/home/message``` and ```smart/home/message/picture```
-2. Based on which MQTT-node the data is coming from, an logo is being created
-
+1. If a sensor is being activated or a picture is taken, data is being send via the MQTT-broker running on this Raspberry Pi. This Node-RED flow is there to make it visual, the MQTT broker will work without this flow as well.
+2. Messages come in via one of the 2 MQTT-nodes ```smart/home/message```,  ```smart/home/message/picture``` and ```smart/garden/message``` Both message-nodes receive data from the different sensors. The picture node receives data from the camera.
+3. Based on which MQTT-node the data is coming from, a logo is being created, both message nodes create a message icon the other picture node creates a camera icon on. This is done in the 2 change nodes. From these change nodes the informationis directly send to the Sense HAT. 
+4. Afther 1 second the display is being cleared: after a delay of 1 second, a black screen is being send.
 
 The flow can be found [here](/flows/MQTT_flow)
 
