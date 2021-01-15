@@ -98,9 +98,9 @@ For this code pattern I used different pieces of hardware. To use all the possib
 ## Step 2 Clone the repo
 
 First let's get the code. From the terminal of the system, you plan on running Node-RED from, do the following:
-```diff
-- Clone the XXXXXX repo:
-```
+
+- Clone the this repo:
+
 ```
 $ git clone https://github.com/IBM/xxxxxxxxx
 ```
@@ -152,7 +152,7 @@ On the dashboard I use the data coming from the following sensors:
 * movement sensor, 
 * light sensor
 
-therefor I added a line of code for each sensor:
+Therefore I added a line of code for each sensor:
 
 Gas sensor (line 185)  it sends the the value of gas to the console and the USB port when ``` i ``` is receiceved by the dashboard or the mobile device.
 ```
@@ -275,9 +275,9 @@ Nov 12 13:17:10 rpiMqttServer systemd[1]: Started LSB: mosquitto MQTT v3.1 messa
 Now it is time to test the broker. Therefor you need to subscribe to an MQTT topic.
 
 A topic is simply a string that looks like a file system path. It has the general form:-
-
+```
 a/b/c/...
-
+```
 The great thing about MQTT is that you can just make up topics which describe your needs. You don’t need to register them anywhere. In this test we use ```test/message```
 In the existing terminal, subscribe to the test/message topic:
 
@@ -304,9 +304,11 @@ I added a [Sense HAT](https://www.raspberrypi.org/products/sense-hat/?resellerTy
 For displaying, I created an application in Node-RED  for that:
 ![MQTT Flow](images/SH_MQTT_Flow.png)
 
-```diff
-- << explain flow here >>
-```
+The flow works as follows:
+1. Messages come in via one of the 2 MQTT-nodes ```smart/home/message``` and ```smart/home/message/picture```
+2. Based on which MQTT-node the data is coming from, an logo is being created
+
+
 The flow can be found [here](/flows/MQTT_flow)
 
 ## Step 6 Set up Gateway
