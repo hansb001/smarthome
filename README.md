@@ -170,9 +170,9 @@ The changed code can be found [here](/code/ArduinoCodeSmartHome.ino)
 
 ## Step 4 Set up Node-RED
 
-```diff
-- add
-```
+Node-RED is a programming tool for wiring together hardware devices, APIs and online services.
+
+It is a browser-based editor to connect all kinds of nodes togethere with wires. Every node has it's own functionality. you get a lot of standerad nodes, but it is also possible install extra nodes needed for your application. All the nodes togeter in your working area is called a flow and can be deployed to its runtime in a single-click.
 
 I am using Node-RED on diferent devices to collect the data from the smart home and garden to show it on the dashboard. Therfore I installed Node-RED on both Raspberry Pi's and on my local machine. If you are using an earlier version of Raspian (Rasberry Pi operating system) Node-RED might be installed allready. I will now explain what you need to do before you can start with importing or building the flows in the next steps.
 
