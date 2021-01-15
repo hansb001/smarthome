@@ -339,14 +339,18 @@ To get the data on the dashboard you need to create a flow:
 
 The flow can be found [here](/flows/Local_flow)
 
-## Step 8 Optional: Set-up Smartgarden with Node-MCU and soil moisture sensor.
+## Step 8 Optional: Set-up Smart garden with Node-MCU and soil moisture sensor.
 
 
-I added an extra device to monitor the garden. I used a NodeMCU device for that. I used a different device for 2 reasons: it a relatively cheap device and to show how easy it is to connect different devices.
+I added an extra device to monitor the garden. I used a NodeMCU device for that. I used a different device for 2 reasons: it is a relatively cheap device and to show how easy it is to connect different devices.
 This device is based on ESP8266 which is commonly used in cases like this.
 
 This device its data from the soil miosture sensor via MQTT to the gateway to display it on the dashboard. This data will be displayed on the dashboard as well
 To upload and compile the code, I use the Arduino IDE
+
+```diff
+- << mention needed libraries and expalin pubsub >>
+```
 
 The code is available is available [here](/code/NodeMCU)
 
