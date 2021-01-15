@@ -216,7 +216,8 @@ You can do that as follows
 
 On the Raspberry Pi for the gateway you need to install:
 
-```node-red-contrib-image-output
+```
+node-red-contrib-image-output
 node-red-contrib-slack-files
 node-red-node-serialport
 node-red-node-base64
@@ -225,11 +226,13 @@ node-red-contrib-usbcamera
 
 On the Raspberry Pi for the MQTT server you need to install:
 
-```node-red-node-pi-sense-hat
+```
+node-red-node-pi-sense-hat
 ```
 
 On the local machine you need to install:
-```node-red-dashboard
+```
+node-red-dashboard
 ```
 
 When installation is complete, you will see the nodes apear in the list of nodes on the left.
