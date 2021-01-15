@@ -13,7 +13,7 @@ int value= 0;
 const char* ssid = "XXX";
 const char* password = "XXX";
 
-// Change the variable to your Raspberry Pi IP address, so it connects to your MQTT broker
+// Change the variable to your Gateway (Raspberry Pi) IP address, so it connects to your MQTT broker
 const char* mqtt_server = "XXX";
 
 
