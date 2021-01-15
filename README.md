@@ -139,15 +139,35 @@ FYI, I did not connect the servo from the window in the right way: it opens when
 
 ## Step 3a Change code to view data on dashboard 
 
-You can use this smarthome like you configured it as above, but to connect it to the gateway and make data vissible to the dashboard you need to add a few lines the code.
+You can use the smart home like you configured it as above, but then no data will be send to the gateway. To make that possible, I checked the code out and cam up with a -fairly- simple solution.
+
+Arduino has the option to send things to a console, the fun thing is when you use that option, the info is also being send to the USB port. On this USB port the gateway is connected so it receives the information from the Arduino. 
+
+To start and stop the different sensors, different letters (a-r) are being used. Later on when building the dashboard we are going to uses these letters as well to control the smart home from the dashboard.
+
+On the dashboard I use the data coming from the following sensors: 
+* gas sensor, 
+* rain sensor, 
+* movement sensor, 
+* light sensor
+
+therefor I added a line of code for each sensor:
+
+Gas sensor (line 185)  it sends the the value of gas to the console and the USB port when ``` i ``` is receiceved by the dashboard or the mobile device.
+```
+184 case 'i'://if val is character 'i'，program will circulate
+185      Serial.println((String)"Gas= "+gas);
+186      //Serial.println(gas);//output the value of variable gas in new lines
+187      delay(100);
+188      break;//exit loop
+```
+
+In this way I added lines for the other sensors as well
+
 The changed code can be found [here](/code/ArduinoCodeSmartHome.ino)
 
 I mainly added lines like the following. This is done because in this way the information is being send to the gateway.
 
-```
-189 case 'j'://if val is character 'j'，program will circulate
-   199  Serial.println((String)"Soil= "+soil);
-```
 ## Step 4 Set up Node-RED
 
 ```diff
