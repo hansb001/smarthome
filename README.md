@@ -356,9 +356,13 @@ The code is available is available [here](/code/NodeMCU)
 ## Links
 
 similar code patterns
+
 node-red tutorial
+
 IBM cloud
+
 Crowdcast
+
 
 
 ## License
