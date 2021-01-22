@@ -242,7 +242,7 @@ When installation is complete, you will see the nodes apear in the list of nodes
 
 ## Step 5 Set up MQTT Broker
 
-MQTT is a lightweight and simple messaging protocol, therefore, you need a broker which receives and sends messages based on a certain topic. If you want to read more about MQTT, please go here: https://mqtt.org
+MQTT is a lightweight and simple messaging protocol, therefore, you need a broker which receives and sends messages based on a certain topic. If you want to read more about MQTT, please go [here](https://mqtt.org).
 In this step I used a Raspberry Pi for an MQTT Broker. You can also host it locally on your laptop or use a test-broker as found on the web.
 I used Mosquito as this is the most used on Raspberry, but basically you can use any broker.
 
