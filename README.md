@@ -317,7 +317,7 @@ The flow can be found [here](/flows/MQTT_flow)
 In this step you wil create a simple flow. This flow is needed to send and recieve data (via MQTT) from the connected devices to a dashboard, wich runs locally or in the cloud. All the sensor data comes in via the MQTT-nodes or via the serial port. The messsages are being split into the right format to make it possible to show on the dashboard. Then they are being send via MQTT to the dashboard. There is also a connection with Slack. If movement is dedetcted at the front of the home a message is being send to Slack and a picture is being made with the camera and send to the dashboard.
 
 ![Gateway Flow](images/SH_Gateway_Flow.png)
-<img src="images/SH_Gateway_Flow.png" width="80%" height="80%"/>
+
 
 
 
