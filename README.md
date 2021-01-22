@@ -333,7 +333,7 @@ This dashboard receives data from the connected devices, especially from some se
 To get the data on the dashboard you need to create a flow:
 
 
-<img src="images/SH_Local_Flow.png" width="50%" height="50%"/>
+<img src="images/SH_Local_Flow.png" width="100%" height="100%"/>
 
 This flow consists of two parts:
 * On the left side all the data comes in via the MQTT-nodes and forwarded to the dashboard elements, these are all graphs exept for the picture. I used a moustache template for that, to show the picture on the dashboard.
