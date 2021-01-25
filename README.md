@@ -348,9 +348,9 @@ I added an extra device to monitor the garden. I used a NodeMCU device for that.
 This device is based on ESP8266 which is commonly used in cases like this.
 
 This device its data from the soil miosture sensor via MQTT to the gateway to display it on the dashboard. This data will be displayed on the dashboard as well
-To upload and compile the code, I use the Arduino IDE
+To upload and compile the code, I use the Arduino IDE.
 
-The code is available is available [here](/code/NodeMCU)
+The code is available [here](/code/NodeMCU).
 
 
 ## Links
