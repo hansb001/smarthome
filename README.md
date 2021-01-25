@@ -15,13 +15,13 @@ Sometimes it can be complicated to read certain sensors to see what is going on.
 
 When you have completed this code-pattern, you will understand how to:
 
-* Connect sensors and actuators to an Arduino and read their values
-* Set up a gateway on a Raspberry Pi
-* Run a MQTT Server on a Raspberry Pi
-* Connect sensors to a NodeMCU device and read their values (Optional)
-* Build an application in Node-RED
-* Use Bluetooth, WIFIand MQTT (and optional LoRAWan) to communicate between the devices
-* Send messages to Slack
+* Connect sensors and actuators to an Arduino and read their values.
+* Set up a gateway on a Raspberry Pi.
+* Run a MQTT Server on a Raspberry Pi.
+* Connect sensors to a NodeMCU device and read their values (Optional).
+* Build an application in Node-RED.
+* Use Bluetooth, WIFI and MQTT (and optional LoRAWan) to communicate between the devices.
+* Send messages to Slack.
 
 ## Flow
 ![ArchitectureDiagram](images/SH_Architecture_DiagramV2.png)
@@ -72,7 +72,7 @@ Follow these steps to set up and run this code pattern. The steps are described 
 5. Set up MQTT Broker
 6. Set up Gateway
 7. Build a dashboard
-8. Optional Set-up Node-MCU
+8. Optional: Set-up Node-MCU
 
 ## Step 1 Do some shopping (Optional)
 
@@ -113,8 +113,9 @@ You first get an introduction to all the parts of the complete set. Then you sta
 
 Then to check if you can connect with the Arduino, you use an example sketch to test connectivity. The next step is to install needed libraries for two of the components:
 
-* LED display
+* LED display.
 * Servos.
+
 After doing this, you are good to go!
 The tutorial then continues with a description of all the components and some sample code to test. There is also a good explanation of every piece of code available.
 
@@ -138,9 +139,9 @@ Arduino has the option to send things to a console, the fun thing is when you us
 To start and stop the different sensors, different letters (a-r) are being used. Later on, when building the dashboard we are going to uses these letters as well to control the smart home from the dashboard.
 
 On the dashboard I use the data coming from the following sensors:
-* gas sensor,
-* rain sensor,
-* movement sensor,
+* gas sensor.
+* rain sensor.
+* movement sensor.
 * light sensor.
 
 Therefore I added a line of code for each sensor:
@@ -168,10 +169,10 @@ It is a browser-based editor to connect all kinds of nodes together with wires. 
 I am using Node-RED on different devices to collect the data from the smart home and garden to show it on the dashboard. Therefore I installed Node-RED on both Raspberry Pi's and on my local machine. If you are using an earlier version of Raspian (Rasberry Pi operating system) Node-RED might be installed already. I will now explain what you need to do before you can start with importing or building the flows in the next steps.
 
 In short, you need to do the following steps for both the Raspberry Pi and local machine:
-1. Install Node.js and nvm
-2. Install Node-RED
-3. Add security to Node-RED
-4. Install extra nodes
+1. Install Node.js and nvm.
+2. Install Node-RED.
+3. Add security to Node-RED.
+4. Install extra nodes.
 
 As installation for both devices is a bit different, I will first explain how to install on Raspberry Pi.
 
@@ -201,9 +202,9 @@ You can install additional nodes to have additional functionalities available.
 
 You can do that as follows:
 
-1. Click on the 'hamburger menu' (in the top right of the screen, on the right of the deploy button)
-2. Manage palette
-3. Install tab
+1. Click on the 'hamburger menu' (in the top right of the screen, on the right of the deploy button).
+2. Manage palette.
+3. Install tab.
 4. Depending on what device you are working on, search for one of the following:
 
 On the Raspberry Pi for the gateway you need to install:
@@ -237,13 +238,13 @@ MQTT is a lightweight and simple messaging protocol, therefore, you need a broke
 
 In this step, I used a Raspberry Pi for an MQTT Broker. You can also host it locally on your laptop or use a test-broker as found on the web. I used Mosquito as this is the most used on Raspberry, but basically, you can use any broker.
 
-To install, use the following command: ```sudo apt install mosquitto mosquitto-clients```
+To install, use the following command: ```sudo apt install mosquitto mosquitto-clients```.
 
-Start the broker and automatically start after reboot using the following command:-
+Start the broker and automatically start after reboot using the following command:
 ```
 sudo systemctl enable mosquitto
 ```
-The broker should now be running. You can check this via the systemd service status:-
+The broker should now be running. You can check this via the systemd service status:
 ```
 sudo systemctl status mosquitto
 ```
@@ -305,7 +306,9 @@ The flow can be found [here](/flows/MQTT_flow)
 
 ## Step 6 Set up Gateway
 
-In this step, you will create a simple flow. This flow is needed to send and receive data (via MQTT) from the connected devices to a dashboard, which runs locally or in the cloud. All the sensor data comes in via the MQTT-nodes or via the serial port. The messages are being split into the right format to make it possible to show on the dashboard. Then they are being sent via MQTT to the dashboard. There is also a connection with Slack. If movement is detected at the front of the home a message is being sent to Slack and a picture is being made with the camera and send to the dashboard.
+In this step, you will create a simple flow. This flow is needed to send and receive data (via MQTT) from the connected devices to a dashboard, which runs locally or in the cloud. All the sensor data comes in via the MQTT-nodes or via the serial port. 
+The messages are being split into the right format to make it possible to show on the dashboard. Then they are being sent via MQTT to the dashboard. 
+There is also a connection with Slack. If movement is detected at the front of the home a message is being sent to Slack and a picture is being made with the camera and send to the dashboard.
 
 ![Gateway Flow](images/SH_Gateway_Flow.png)
 
