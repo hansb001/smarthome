@@ -355,19 +355,19 @@ The code is available is available [here](/code/NodeMCU)
 
 ## Links
 
-* Related code patterns:
-[Build your first IoT application](https://developer.ibm.com/tutorials/iot-monitoring-app-node-red-bluemix-trs/)
-[Get started developing IoT solutions by building a simple home automation system](https://developer.ibm.com/tutorials/iot-lp101-get-started-develop-iot-home-automation/)
-[Create an Internet of Things Platform Starter application](https://developer.ibm.com/tutorials/how-to-create-an-internet-of-things-platform-starter-application/)
-[Turn your smartphone into an IoT device](https://developer.ibm.com/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/)
-[Build a machine learning node for Node-RED using TensorFlow.js](https://developer.ibm.com/tutorials/building-a-machine-learning-node-for-node-red-using-tensorflowjs/)
+Related code patterns:
+* [Build your first IoT application](https://developer.ibm.com/tutorials/iot-monitoring-app-node-red-bluemix-trs/)
+* [Get started developing IoT solutions by building a simple home automation system](https://developer.ibm.com/tutorials/iot-lp101-get-started-develop-iot-home-automation/)
+* [Create an Internet of Things Platform Starter application](https://developer.ibm.com/tutorials/how-to-create-an-internet-of-things-platform-starter-application/)
+* [Turn your smartphone into an IoT device](https://developer.ibm.com/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/)
+* [Build a machine learning node for Node-RED using TensorFlow.js](https://developer.ibm.com/tutorials/building-a-machine-learning-node-for-node-red-using-tensorflowjs/)
 
-* Node-RED information:
-[Getting started with Node-RED](https://nodered.org/docs/getting-started/)
-[Create a Node-RED starter application](https://developer.ibm.com/technologies/iot/tutorials/how-to-create-a-node-red-starter-application/)
+Node-RED information:
+* [Getting started with Node-RED](https://nodered.org/docs/getting-started/)
+* [Create a Node-RED starter application](https://developer.ibm.com/technologies/iot/tutorials/how-to-create-a-node-red-starter-application/)
 
 
-* Create a free IBM cloud [here](http://cloud.ibm.com).
+Create a free IBM cloud [here](http://cloud.ibm.com).
 
 
 
