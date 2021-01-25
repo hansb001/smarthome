@@ -334,6 +334,18 @@ This device its data from the soil moisture sensor via MQTT to the gateway to di
 
 The code is available [here](/code/NodeMCU).
 
+## Final Thoughts
+
+When you followed all the steps and used all the devices as described, you have built something similar as in the picture below. You can now test all the functionalities and see if it works. If you have any improvements or additional functionalities or comments etc. please let me know.
+
+<img src="images/SH_Overview_Devices.png" width="100%" height="100%"/>
+
+1. Smart Home with sensors and actuators.
+2. Smart Garden (Node-MCU with sensor).
+3. Gateway (Raspberry Pi)
+4. MQTT server ( Raspberry Pi and Sense Hat)
+5. Camera
+
 
 ## Links
 
