@@ -1,9 +1,9 @@
 
 
 # Open-source tools to connect and control your ‘Smart home’ via MQTT and Bluetooth
-Sometimes it can be complicated to read certain sensors to see what is going on. This code-pattern makes that simple, with only open-source technologies. This might not be an enterprise-ready solution, but it shows how easy it is to use any device. So also, more professional devices can be used in similar ways.
+Sometimes it can be complicated to read certain sensors to see what is going on. This tutorial makes that simple, with only open-source technologies. This might not be an enterprise-ready solution, but it shows how easy it is to use any device. So also, more professional devices can be used in similar ways.
 
-When you have completed this code-pattern, you will understand how to:
+When you have completed this tutorial, you will understand how to:
 
 * Connect sensors and actuators to an Arduino and read their values.
 * Set up a gateway on a Raspberry Pi.
@@ -53,7 +53,7 @@ When you have completed this code-pattern, you will understand how to:
 
 ## Steps
 
-Follow these steps to set up and run this code pattern. The steps are described in detail below.
+Follow these steps to set up and run this tutorial. The steps are described in detail below.
 
 1. Do some shopping (optional)
 2. Clone the repo
@@ -68,7 +68,7 @@ Follow these steps to set up and run this code pattern. The steps are described 
 
 
 
-I used for this code pattern the following components:
+I used for this tutorial the following components:
 
 * [*Keyestudio smart home set:*](https://www.keyestudio.com/products/keyestudio-smart-home-kit-withlus-board-for-arduino-diy-stem) this set includes a laser-cut wooden house, with an Arduino clone with a sensor shield, Bluetooth board, sensors and actuators. This is available on Amazon but also at Ali-express etc. It is really good quality, with excellent instructions to build the house and to connect everything. The needed code is available online. For every sensor/actuator is code available, and of course also for the complete set-up. This set is sold via different vendors, so look for the best price for you.
 * Raspberry PI 1: This house is connected to a gateway, I used a Raspberry Pi 4 for that, but this can also be a Raspberry Pi 3. This Raspberry acts as a gateway between the devices and the MQTT server. This gateway is also connected to the cloud or local machine. OPTIONAL: you can also host the gateway on another device, like your local machine.
@@ -76,7 +76,7 @@ I used for this code pattern the following components:
 * Web camera, this can be any USB camera or a Raspberry Pi camera.
 * OPTIONAL: NodeMCU: there are different devices based on ESP8266, It is open source and relatively cheap and easy to work with. I am using a LoLin board, which has WIFI on board, I have connected a sensor to it to control my 'smart garden'.
 
-For this code pattern, I used different pieces of hardware. To use all the possibilities I am going to mention in this Code pattern, I advise you to have all parts available. You can also build the functionalities in this code pattern with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop or on IBM Cloud.
+For this tutorial, I used different pieces of hardware. To use all the possibilities I am going to mention in this tutorial, I advise you to have all parts available. You can also build the functionalities in this tutorial with only having an Arduino with one sensor. All the parts running on the 2 Raspberry Pi's can also run on your laptop or on IBM Cloud.
 
 
 ## Step 2 Clone the repo
@@ -110,7 +110,7 @@ After doing this, you are good to go!
 The tutorial then continues with a description of all the components and some sample code to test. There is also a good explanation of every piece of code available.
 
 The last step before assembling the wooden house and the components is to connect your IOS or Android device to the Bluetooth Module.
-You have to download an app, with this app you can control and start/stop some of the components. Later on in this code-pattern, you will build an alternative for this.
+You have to download an app, with this app you can control and start/stop some of the components. Later on in this tutorial, you will build an alternative for this.
 
 If the house is assembled, you need to connect all the wires from the components to the expansion board, in the tutorial you will see a table to connect the components to the right ports.
 
@@ -349,7 +349,7 @@ When you followed all the steps and used all the devices as described, you have 
 
 ## Links
 
-Related code patterns:
+Related coded patterns:
 * [Build your first IoT application](https://developer.ibm.com/tutorials/iot-monitoring-app-node-red-bluemix-trs/)
 * [Get started developing IoT solutions by building a simple home automation system](https://developer.ibm.com/tutorials/iot-lp101-get-started-develop-iot-home-automation/)
 * [Create an Internet of Things Platform Starter application](https://developer.ibm.com/tutorials/how-to-create-an-internet-of-things-platform-starter-application/)
@@ -369,7 +369,7 @@ Create a free IBM cloud [here](http://cloud.ibm.com).
 
 ## License
 
-This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+This tutorial is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this tutorial are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 [Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
 
